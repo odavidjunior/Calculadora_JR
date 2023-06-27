@@ -1,0 +1,92 @@
+:root {
+    --mainC: #6400FF;
+    --mainCofC: #170101;
+    --mainCofe: #ff0000d1;  
+}
+
+body {
+    background-color: aquamarine;
+    color: blue;
+    font-family: sans-serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.all {
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: solid 3px;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: #00000021;
+   
+}
+
+.btn {
+    font-size: 25px;
+    padding: 15px 20px;
+    margin: 1.5px 1px;
+    border-radius: 20px;
+    outline: none;
+    border: solid 2px black;
+    font-family: monospace;
+    background: linear-gradient(rgb(0, 183, 255), rgb(98, 0, 255));
+    transition: transform .11s linear;
+}
+
+.display {
+    font-size: 35px;
+    padding: 10px 5px;
+    width: 230px;
+    text-align: right;
+    border-radius: 20px;
+    border: solid 2px rgb(245, 5, 5);
+    font-family: monospace;
+    color: var(--mainC);
+    letter-spacing: -3.5px;
+    outline: none;
+    background: linear-gradient(#CACACA, #ffffff, #ffffff, #ffffff, #ffffff, #CACACA);
+}
+
+.obtn {
+    background: linear-gradient(var(--mainC), #DD00BB);
+    color: rgb(250, 8, 8);
+}
+
+.cbtn {
+    background: linear-gradient(var(--mainCofC), #d0eb65);
+        color: rgb(250, 8, 8);
+}
+
+.ebtn {
+    background: linear-gradient(var(--mainCofe), #ee5d35);
+    padding: 15px 52.5px;
+    border-radius: 200px;
+    color: rgb(9, 1, 1);
+}
+
+.display:hover {
+    animation: danimation .2s linear forwards;
+}
+
+@keyframes danimation {
+    to {
+        transform: scale(1.06);
+    }
+}
+
+.btn:hover {
+    transform: scale(1.12);
+}
+
+.tbtn {
+    height: 35px;
+    width: 35px;
+    border-radius: 200px;
+}
